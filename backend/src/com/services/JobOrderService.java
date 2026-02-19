@@ -41,7 +41,7 @@ public class JobOrderService {
         DatabaseService.insertJobOrder(newJobOrder);
         System.out.println("Job Order Successfully Created!");
 
-        Email.sendEmail();
+        //Email.sendEmail();
 
     }
 
