@@ -6,9 +6,9 @@ import com.classes.JobOrder;
 import com.tokens.Token;
 
 public class DatabaseService {
-    private static String url = "jdbc:mysql://localhost:3306/my_first_db";
-    private static String user = "root";
-    private static String password = "Zyzz@2022";
+    private final static String url = "jdbc:mysql://mysql-bbe58e-emeraldisle-3e00.b.aivencloud.com:11707/my_first_db?sslmode=verify-ca&enabledTLSProtocols=TLSv1.2,TLSv1.3";
+    private final static String user = "avnadmin";
+    private final static String password = "AVNS_hc8P7RDvEk5hxt0bk32";
 
     public static int checkAdminDatabase() {
         try (Connection conn = DriverManager.getConnection(url, user, password)) {

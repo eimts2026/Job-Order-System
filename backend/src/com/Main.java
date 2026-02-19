@@ -18,9 +18,9 @@ public class Main {
         Map<String, JobOrder> allJobOrders = new HashMap<>();
 
         // MySQL
-        String url = "jdbc:mysql://localhost:3306/my_first_db";
-        String user = "root";
-        String password = "Zyzz@2022";
+//        String url = "jdbc:mysql://mysql-bbe58e-emeraldisle-3e00.b.aivencloud.com:11707/my_first_db?sslmode=verify-ca&enabledTLSProtocols=TLSv1.2,TLSv1.3";
+//        String user = "avnadmin";
+//        String password = "AVNS_hc8P7RDvEk5hxt0bk32";
 
         // System.out.println("Connecting...");
 
