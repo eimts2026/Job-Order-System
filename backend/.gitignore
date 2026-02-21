@@ -2,6 +2,13 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+*.iml
+.idea
+out/
+gen/
+
+### Build Folders ###
+target/
 
 ### Eclipse ###
 .apt_generated

@@ -1,4 +1,4 @@
-package com.classes;
+package main.com.joborder.system.model;
 
 public class Client {
     public static String clientName;

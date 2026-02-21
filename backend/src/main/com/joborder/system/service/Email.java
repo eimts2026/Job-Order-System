@@ -1,4 +1,4 @@
-package com.services;
+package main.com.joborder.system.service;
 
 import jakarta.mail.*;
 import jakarta.mail.internet.*;

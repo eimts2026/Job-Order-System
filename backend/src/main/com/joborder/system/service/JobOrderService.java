@@ -1,12 +1,12 @@
-package com.services;
+package main.com.joborder.system.service;
 
 import java.util.Map;
 import java.util.HashMap;
 import java.util.*;
 
-import com.classes.JobOrder;
+import main.com.joborder.system.model.JobOrder;
 import com.tokens.Token;
-import com.services.Email;
+import main.com.joborder.system.service.Email;
 
 public class JobOrderService {
     public static Map<String, JobOrder> allJobOrders = new HashMap<>();

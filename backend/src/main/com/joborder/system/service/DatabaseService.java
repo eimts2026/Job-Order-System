@@ -1,9 +1,11 @@
-package com.services;
+package main.com.joborder.system.service;
 import java.sql.*;
 
-import com.classes.Admin;
-import com.classes.JobOrder;
+
 import com.tokens.Token;
+import main.com.joborder.system.model.Admin;
+import main.com.joborder.system.model.JobOrder;
+import main.com.joborder.system.service.JobOrderService;
 
 public class DatabaseService {
     private final static String url = "jdbc:mysql://mysql-bbe58e-emeraldisle-3e00.b.aivencloud.com:11707/my_first_db?sslmode=verify-ca&enabledTLSProtocols=TLSv1.2,TLSv1.3";

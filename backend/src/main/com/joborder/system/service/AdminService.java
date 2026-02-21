@@ -1,10 +1,10 @@
-package com.services;
+package main.com.joborder.system.service;
 
 import java.util.Map;
 import java.util.HashMap;
 import java.util.*;
 
-import com.classes.Admin;
+import main.com.joborder.system.model.Admin;
 
 public class AdminService {
     public static Map<String, Admin> allAdmins = new HashMap<>();
@@ -12,7 +12,7 @@ public class AdminService {
 
     public static void createAdmin() {
         /**
-         * This method creates an Admin, and adds admin to HashMap and database
+         * This method creates an Admin and adds admin to HashMap and database
          */
         System.out.print("\nEnter Admin First Name: ");
         String firstName = input.nextLine();
@@ -28,7 +28,7 @@ public class AdminService {
 
         Admin newAdmin = new Admin(firstName, lastName, email, id);
 
-        DatabaseService.insertAdmin(newAdmin);
+        main.com.joborder.system.service.DatabaseService.insertAdmin(newAdmin);
         allAdmins.put(newAdmin.getEmpID(), newAdmin);
 
         System.out.println("\nAdmin Added Successfully!");
@@ -42,7 +42,7 @@ public class AdminService {
         System.out.print("\nEnter Admin Employee ID: ");
         String oldID = input.nextLine();
 
-        int check = DatabaseService.checkAdminDatabase();
+        int check = main.com.joborder.system.service.DatabaseService.checkAdminDatabase();
 
         if (allAdmins.containsKey(oldID) && (check == 1)) {
 
@@ -63,7 +63,7 @@ public class AdminService {
             Admin newAdmin = new Admin(newFirstName, newLastName, newEmail, newID);
 
             allAdmins.put(oldID, newAdmin);
-            DatabaseService.updateAdmin(newAdmin, oldID);
+            main.com.joborder.system.service.DatabaseService.updateAdmin(newAdmin, oldID);
 
             System.out.println("\nAdmin Updated Successfully!");
         }
@@ -78,10 +78,10 @@ public class AdminService {
         System.out.print("\nEnter Admin ID: ");
         String adminID = input.nextLine();
 
-        int check = DatabaseService.checkAdminDatabase();
+        int check = main.com.joborder.system.service.DatabaseService.checkAdminDatabase();
 
         if (allAdmins.containsKey(adminID) && (check == 1)) {
-            DatabaseService.deleteAdmin(allAdmins.get(adminID));
+            main.com.joborder.system.service.DatabaseService.deleteAdmin(allAdmins.get(adminID));
 
             allAdmins.remove(adminID);
             System.out.println("\nAdmin Removed Successfully!");

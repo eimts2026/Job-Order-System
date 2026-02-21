@@ -1,18 +1,17 @@
-package com;
+package main.com.joborder.system;
 
 import java.util.*;
 
-import com.classes.JobOrder;
+import main.com.joborder.system.model.JobOrder;
 import java.util.Map;
 import java.util.HashMap;
 
 // main process imports
-import com.services.AdminService;
-import com.services.DatabaseService;
-import com.services.JobOrderService;
-import com.services.Email;
+import main.com.joborder.system.service.AdminService;
+import main.com.joborder.system.service.DatabaseService;
+import main.com.joborder.system.service.JobOrderService;
 
-public class Main {
+public class JobOrderApplicationJava {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Map<String, JobOrder> allJobOrders = new HashMap<>();
