@@ -9,6 +9,9 @@
         <module name="job-order-system-eimts" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="my-nano-project" target="25" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
